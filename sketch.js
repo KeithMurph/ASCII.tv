@@ -11,10 +11,16 @@ function setup() {
   video = createCapture(VIDEO);
   video.size(64, 48);
   asciiDiv = createDiv();
-  video : {
-    facingMode: { exact : "environment" }
-  }
 }
+navigator.mediaDevices.getUserMedia({ 
+  video: { 
+    facingMode: { exact: "environment" }
+  } 
+})
+.then(function(stream) {
+  video.src = window.URL.createObjectURL(stream);
+  video.play();
+});
 
 function draw() {
   video.loadPixels();

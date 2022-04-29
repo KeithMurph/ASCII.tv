@@ -10,6 +10,7 @@ function setup() {
   noCanvas();
   video = createCapture(VIDEO);
   video.size(64, 48);
+  video.facingMode = "environment";
   asciiDiv = createDiv();
 }
 

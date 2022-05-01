@@ -12,15 +12,9 @@ function setup() {
   video.size(64, 48);
   asciiDiv = createDiv();
 }
-navigator.mediaDevices.getUserMedia({ 
-  video: { 
-    facingMode: { exact: "environment" }
-  } 
+
 })
-.then(function(stream) {
-  video.src = window.URL.createObjectURL(stream);
-  video.play();
-});
+
 
 function draw() {
   video.loadPixels();

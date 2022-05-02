@@ -13,7 +13,8 @@ function setup() {
   asciiDiv = createDiv();
 }
 
-})
++
+
 
 
 function draw() {

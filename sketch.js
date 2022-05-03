@@ -19,6 +19,8 @@ function setup() {
 
 // work on this
 
+// practice macro push to git
+
 
 function draw() {
   video.loadPixels();

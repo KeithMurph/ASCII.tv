@@ -13,7 +13,9 @@ function setup() {
   asciiDiv = createDiv();
 }
 
-+
+// need to add mobile rear camera option 
+
+// need to add record video option
 
 
 
